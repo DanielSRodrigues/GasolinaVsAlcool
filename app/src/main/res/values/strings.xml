@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">GasolinaVsAlcool</string>
+    <string name="gasolina_moeda">Gasoline ($)</string>
+    <string name="alcool_moeda">Alcohol ($)</string>
+    <string name="msgMelhorGasolina">Gasoline</string>
+    <string name="msgMelhorAlcool">Alcohol</string>
+    <string name="Calcular">Calc</string>
 </resources>

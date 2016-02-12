@@ -9,8 +9,36 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.edu.unibratec.gasolinavsalcool.MainActivity">
 
-    <TextView
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edtGasolina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/gasolina_moeda"
+        android:inputType="numberDecimal" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edtAlcool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtGasolina"
+        android:hint="@string/alcool_moeda"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnCalc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edtAlcool"
+        android:text="@string/Calcular" />
+
+    <EditText
+        android:id="@+id/edtMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalc"
+        android:background="@android:color/transparent"
+        android:editable="false"
+        android:focusable="false" />
 </RelativeLayout>
